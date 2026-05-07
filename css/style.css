@@ -1,0 +1,449 @@
+body{
+  font-family:Arial, sans-serif;
+  /* background:#f7f9fc; */
+}
+
+/* HERO */
+
+.hero{
+  height:75vh;
+  background:url("../images/homebanner.jpg") center/cover no-repeat;
+  position:relative;
+  display:flex;
+  align-items:center;
+  margin-top:80px;
+}
+
+.hero-overlay{
+  position:absolute;
+  inset:0;
+  background:rgba(0,0,0,0.6);
+}
+
+.hero-content{
+  position:relative;
+  z-index:2;
+}
+
+.hero-left{
+  max-width:680px;
+  color:#fff;
+}
+
+.hero-small{
+  color:#00bcd4;
+  font-size:18px;
+  letter-spacing:1px;
+}
+
+.hero-left h1{
+  font-size:46px;
+  line-height:1.2;
+  margin:20px 0;
+}
+
+.hero-left p{
+  font-size:18px;
+  line-height:1.8;
+  margin-bottom:35px;
+}
+
+.hero-btn{
+  display:inline-block;
+  padding:15px 40px;
+  background:#073d69;
+  color:#fff;
+  text-decoration:none;
+  border-radius:40px;
+  transition:0.3s;
+}
+
+.hero-btn:hover{
+  background:#0097a7;
+}
+
+/* SECTION */
+.section-title{
+  text-align:center;
+  margin-bottom:60px;
+}
+
+.section-title h2{
+  font-size:42px;
+  color:#070e1d;
+}
+
+.section-title p{
+  color:#111010;
+  font-size: 18px;
+  margin-top:15px;
+}
+
+/* SERVICES */
+
+.services-section{
+  padding:40px 0;
+}
+.services-section1{
+  padding:160px 0 30px;
+}
+.service-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:30px;
+}
+
+.service-card{
+  background:#fff;
+  border-radius:15px;
+  overflow:hidden;
+  box-shadow:0 4px 15px rgba(0,0,0,0.08);
+  transition:0.3s;
+}
+
+.service-card:hover{
+  transform:translateY(-8px);
+}
+
+.service-card img{
+  width:100%;
+  height:220px;
+  object-fit:cover;
+}
+
+.service-content{
+  padding:20px;
+}
+
+.service-content h3{
+  color:#071739;
+  margin-bottom:15px;
+}
+
+.service-content p{
+  color:#666;
+  line-height:1.8;
+}
+
+
+
+/* GROW SECTION */
+
+.grow-section{
+  padding:100px 0 20px;
+  background:#fff;
+}
+
+.grow-container{
+  display:flex;
+  align-items:center;
+  gap:60px;
+}
+
+.grow-left,
+.grow-right{
+  flex:1;
+}
+
+.grow-left img{
+  width:100%;
+  border-radius:20px;
+}
+
+.grow-right h2{
+  font-size:40px;
+  color:#071739;
+  margin-bottom:25px;
+  font-weight: 800;
+}
+
+.grow-right p{
+  font-size: 18px;
+  color:#666;
+  line-height:1.9;
+  margin-bottom:20px;
+}
+
+.grow-btn{
+  display:inline-block;
+  padding:14px 35px;
+  background:#071739;
+  color:#fff;
+  border-radius:40px;
+  text-decoration:none;
+}
+
+@media(max-width:992px){
+
+  .service-grid{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+  .grow-container{
+    flex-direction:column;
+  }
+
+}
+
+@media(max-width:768px){
+  .services-section{
+  padding:40px 0;
+  }
+  .hero-left h1{
+    font-size:40px;
+  }
+
+  .service-grid{
+    grid-template-columns:1fr;
+  }
+}
+
+
+/* ================= BUSINESS SECTION ================= */
+
+.business-section{
+
+  background:#f5f5f5;
+
+  padding:110px 0;
+}
+
+.business-top{
+
+  text-align:center;
+
+  margin-bottom:70px;
+}
+
+.business-top h2{
+
+  font-size:44px;
+
+  font-weight:800;
+
+  color:#070b1f;
+
+  line-height:1.2;
+
+  margin-bottom:25px;
+}
+
+.business-top p{
+  font-size:20px;
+  color:#111;
+
+  line-height:1.5;
+
+  max-width:1300px;
+
+  margin:auto;
+}
+
+/* GRID */
+
+.business-grid{
+
+  display:grid;
+
+  grid-template-columns:repeat(3,1fr);
+
+  gap:40px;
+}
+
+/* CARD */
+
+.business-card{
+
+  background:#fff;
+
+  padding:40px 35px;
+
+  border:1px solid #e5e5e5;
+
+  transition:0.4s;
+}
+
+.business-card:hover{
+
+  transform:translateY(-8px);
+
+  box-shadow:0 10px 25px rgba(0,0,0,0.08);
+}
+
+/* ACTIVE CARD */
+
+.active-card{
+
+  background:#1f86e5;
+}
+
+.active-card h3,
+.active-card p,
+.active-card a,
+.active-card .business-icon{
+
+  color:#fff;
+}
+
+/* ICON */
+
+.business-icon{
+
+  font-size:72px;
+
+  color:#3d63d8;
+
+  margin-bottom:20px;
+}
+
+/* TITLE */
+
+.business-card h3{
+
+  font-size:24px;
+
+  font-weight:700;
+
+  color:#070b1f;
+
+  margin-bottom:16px;
+
+  line-height:1.4;
+}
+
+/* PARA */
+
+.business-card p{
+
+  font-size:16px;
+
+  line-height:1.5;
+
+  color:#222;
+
+  margin-bottom:28px;
+}
+
+/* BUTTON */
+
+.business-card a{
+
+  text-decoration:none;
+  color:#033375;
+  font-size:14px;
+  font-weight:700;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:1200px){
+  .business-top h2{
+    font-size:52px;
+  }
+}
+
+@media(max-width:992px){
+  .business-grid{
+    grid-template-columns:1fr;
+  }
+
+  .business-top h2{
+    font-size:42px;
+  }
+
+  .business-top p{
+    font-size:18px;
+  }
+
+}
+
+@media(max-width:576px){
+  .business-section{
+    padding:80px 0;
+  }
+
+  .business-top{
+    margin-bottom:45px;
+  }
+
+  .business-top h2{
+    font-size:34px;
+  }
+
+  .business-top p{
+    font-size:16px;
+    line-height:1.8;
+  }
+
+  .business-card{
+    padding:35px 25px;
+  }
+
+  .business-icon{
+    font-size:55px;
+  }
+
+  .business-card h3{
+    font-size:24px;
+  }
+
+  .business-card p{
+    font-size:16px;
+  }
+
+}
+
+
+/* contact and whatshap  */
+.card-buttons{
+  display:flex;
+  gap:10px;
+
+  padding:0 14px 18px;
+
+  margin-top:15px;
+}
+
+.contact-btn,
+.whatsapp-btn{
+
+  /* flex:1; */
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  height:32px;
+  width: 120px;
+  border-radius:5px;
+
+  color:#fff;
+
+  font-size:14px;
+
+  font-weight:600;
+
+  transition:0.3s;
+
+  text-decoration:none;
+}
+
+/* CONTACT */
+
+.contact-btn{
+  background:#1565c0;
+}
+
+.contact-btn:hover{
+  background:#0d47a1;
+}
+
+/* WHATSAPP */
+
+.whatsapp-btn{
+  background:#25D366;
+}
+
+.whatsapp-btn:hover{
+  background:#128C7E;
+}

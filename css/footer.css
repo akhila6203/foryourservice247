@@ -1,0 +1,326 @@
+html,
+body{
+  margin:0;
+  padding:0;
+  width:100%;
+  overflow-x:hidden;
+  font-family:Arial, sans-serif;
+}
+
+/* ================= FOOTER ================= */
+
+.footer{
+  background:#071739;
+  color:#fff;
+  margin-top:80px;
+}
+
+/* CONTAINER */
+
+.footer-container{
+
+  width:90%;
+
+  max-width:1200px;
+
+  margin:auto;
+
+  display:grid;
+
+  grid-template-columns:1.3fr 1fr 1.2fr;
+
+  gap:50px;
+
+  padding:70px 0 50px;
+}
+
+/* LOGO */
+
+.footer-logo-wrap{
+
+  margin-bottom:25px;
+}
+
+.footer-logo{
+
+  width:90px;
+
+  border-radius:12px;
+
+  object-fit:cover;
+}
+
+/* DESCRIPTION */
+
+.footer-desc{
+
+  color:#cfcfcf;
+
+  line-height:1.9;
+
+  font-size:16px;
+
+  max-width:320px;
+}
+
+/* TITLES */
+
+.footer-box h3{
+
+  font-size:24px;
+
+  margin-bottom:28px;
+
+  color:#fff;
+
+  font-weight:700;
+}
+
+/* LINKS */
+
+.footer-links{
+
+  list-style:none;
+
+  padding:0;
+
+  margin:0;
+}
+
+.footer-links li{
+
+  margin-bottom:18px;
+}
+
+.footer-links li a{
+
+  text-decoration:none;
+
+  color:#cfcfcf;
+
+  font-size:16px;
+
+  transition:0.3s;
+}
+
+.footer-links li a:hover{
+
+  color:#00bcd4;
+
+  padding-left:6px;
+}
+
+/* CONTACT */
+
+.footer-contact{
+
+  color:#cfcfcf;
+
+  line-height:1.9;
+
+  font-size:16px;
+
+  margin-bottom:18px;
+}
+
+.footer-phone{
+
+  display:inline-block;
+
+  color:#00bcd4;
+
+  text-decoration:none;
+
+  margin-bottom:15px;
+
+  font-size:16px;
+}
+
+.footer-mail{
+
+  color:#cfcfcf;
+
+  font-size:16px;
+
+  line-height:1.8;
+}
+
+/* ================= FOOTER BOTTOM ================= */
+
+.footer-bottom{
+
+  border-top:1px solid rgba(255,255,255,0.1);
+
+  padding:22px 20px;
+
+  display:flex;
+
+  align-items:center;
+
+  justify-content:center;
+
+  gap:40px;
+
+  flex-wrap:wrap;
+
+  text-align:center;
+}
+
+.footer-bottom p{
+
+  margin:0;
+
+  color:#cfcfcf;
+
+  font-size:15px;
+
+  cursor:pointer;
+
+  transition:0.3s;
+}
+
+.footer-bottom p:hover{
+
+  color:#00bcd4;
+}
+
+/* ================= WHATSAPP ================= */
+
+.footer-whatsapp{
+
+  position:fixed;
+
+  right:20px;
+
+  bottom:20px;
+
+  width:60px;
+
+  height:60px;
+
+  background:#25D366;
+
+  border-radius:50%;
+
+  display:flex;
+
+  align-items:center;
+
+  justify-content:center;
+
+  color:#fff;
+
+  font-size:30px;
+
+  text-decoration:none;
+
+  z-index:999;
+
+  box-shadow:0 5px 15px rgba(0,0,0,0.25);
+
+  transition:0.3s;
+}
+
+.footer-whatsapp:hover{
+
+  transform:scale(1.08);
+}
+
+/* ================= TAB ================= */
+
+@media(max-width:992px){
+
+  .footer-container{
+
+    grid-template-columns:1fr 1fr;
+
+    gap:40px;
+  }
+
+}
+
+/* ================= MOBILE ================= */
+
+@media(max-width:768px){
+
+  .footer{
+
+    margin-top:60px;
+  }
+
+  .footer-container{
+
+    grid-template-columns:1fr;
+
+    text-align:center;
+
+    gap:40px;
+
+    padding:55px 0 40px;
+  }
+
+  .footer-logo-wrap{
+
+    display:flex;
+
+    justify-content:center;
+  }
+
+  .footer-desc{
+
+    margin:auto;
+  }
+
+  .footer-bottom{
+
+    gap:18px;
+
+    padding:18px 15px;
+  }
+
+  .footer-bottom p{
+
+    font-size:14px;
+  }
+
+  .footer-whatsapp{
+
+    width:54px;
+
+    height:54px;
+
+    font-size:26px;
+
+    right:15px;
+
+    bottom:15px;
+  }
+
+}
+
+/* ================= SMALL MOBILE ================= */
+
+@media(max-width:480px){
+
+  .footer-box h3{
+
+    font-size:22px;
+  }
+
+  .footer-contact,
+  .footer-mail,
+  .footer-phone,
+  .footer-links li a,
+  .footer-desc{
+
+    font-size:15px;
+  }
+
+  .footer-bottom{
+
+    flex-direction:column;
+
+    gap:10px;
+  }
+
+}
