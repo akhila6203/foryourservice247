@@ -17,7 +17,7 @@ body{
 /* ================= ABOUT SECTION ================= */
 
 .about-section{
-  padding:170px 0 30px;
+  padding:220px 0 30px;
 }
 
 .about-container{
@@ -61,19 +61,19 @@ body{
   margin-bottom:35px;
 }
 /* RIGHT */
-/* 
+
 .about-image{
   position:relative;
 }
 .about-image img{
   width:90%;
-
+  height: 550px;
   border-radius:20px;
 
   object-fit:cover;
 
   box-shadow:0 10px 40px rgba(0,0,0,0.08);
-} */
+}
 
 /* ================= CARDS ================= */
 
@@ -186,7 +186,7 @@ body{
 
   .about-section{
 
-    padding:140px 0 90px;
+    padding:190px 0 90px;
   }
 
   .about-left h1{

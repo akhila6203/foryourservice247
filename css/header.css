@@ -6,7 +6,7 @@
 
 .header{
   position:fixed;
-  top:0;
+  top:50px;
   left:0;
   width:100%;
   /* background:#02091b; */
@@ -50,7 +50,7 @@
 .nav-links li a{
   color:#fff;
   text-decoration:none;
-  font-size:18px;
+  font-size:20px;
   font-weight:600;
   transition:0.3s;
 }
@@ -97,7 +97,7 @@
 
   .navbar{
     position:fixed;
-    top:0;
+    top:50px;
     right:-100%;
     width:280px;
     height:100vh;
@@ -126,4 +126,65 @@
     cursor:pointer;
   }
 
+  .topbar-container{
+  justify-content:center;
+  }
+
+.topbar-right{
+  gap:10px;
+  flex-wrap:wrap;
 }
+
+.topbar-right a{
+  font-size:14px;
+  line-height: 0.5px;
+}
+
+}
+
+
+
+/* ================= TOP BAR ================= */
+
+.top-bar{
+  width:100%;
+  background:#0a0a0a;
+  border-bottom:1px solid rgba(255,255,255,0.1);
+  position:fixed;
+  top:0;
+  left:0;
+  z-index:1000;
+}
+
+.topbar-container{
+  display:flex;
+  justify-content:flex-end;
+  align-items:center;
+  height:50px;
+}
+
+.topbar-right{
+  display:flex;
+  align-items:center;
+  gap:18px;
+}
+
+.topbar-right a{
+  color:#fff;
+  text-decoration:none;
+  font-size:16px;
+  font-weight:500;
+  transition:0.3s;
+}
+
+.topbar-right a:hover{
+  color:#00bcd4;
+}
+
+.divider{
+  width:1px;
+  height:18px;
+  background:rgba(255,255,255,0.4);
+}
+
+

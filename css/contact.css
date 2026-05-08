@@ -17,7 +17,7 @@ body{
 /* ================= CONTACT ================= */
 
 .contact-section{
-  padding:160px 0 100px;
+  padding:210px 0 100px;
 }
 
 .contact-container{
@@ -165,7 +165,7 @@ textarea{
 
   .contact-section{
 
-    padding:130px 0 80px;
+    padding:200px 0 80px;
   }
 
   .contact-form-box{
@@ -175,12 +175,12 @@ textarea{
 
   .contact-form-box h2{
 
-    font-size:34px;
+    font-size:30px;
   }
 
   .contact-form-box p{
 
-    font-size:17px;
+    font-size:16px;
   }
 
   .form-grid{
