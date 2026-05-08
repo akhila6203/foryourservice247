@@ -148,7 +148,8 @@
 
 .top-bar{
   width:100%;
-  background:#0a0a0a;
+  /* background:#020512; */
+  background:#071739;
   border-bottom:1px solid rgba(255,255,255,0.1);
   position:fixed;
   top:0;
